@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="ntu_library_lang_view_tree" model="ir.ui.view">
+        <field name="name">ntu.library.lang.tree</field>
+        <field name="model">ntu.library.lang</field>
+        <field name="arch" type="xml">
+            <tree string="NTU Library Lang">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="ntu_library_lang_view_form" model="ir.ui.view">
+        <field name="name">ntu.library.lang.form</field>
+        <field name="model">ntu.library.lang</field>
+        <field name="arch" type="xml">
+            <form string="NTU Library Lang">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ntu_library_lang_search" model="ir.ui.view">
+        <field name="name">ntu.library.lang.search</field>
+        <field name="model">ntu.library.lang</field>
+        <field name="arch" type="xml">
+            <search string="NTU Library">
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="ntu_library_lang_action" model="ir.actions.act_window">
+        <field name="name">Language</field>
+        <field name="res_model">ntu.library.lang</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="genres_literature_view_tree" model="ir.ui.view">
+        <field name="name">genres.literature.tree</field>
+        <field name="model">genres.literature</field>
+        <field name="arch" type="xml">
+            <tree string="Genres Literature">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="genres_literature_view_form" model="ir.ui.view">
+        <field name="name">genres.literature.form</field>
+        <field name="model">genres.literature</field>
+        <field name="arch" type="xml">
+            <form string="Genres Literature">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="genres_literature_search" model="ir.ui.view">
+        <field name="name">genres.literature.search</field>
+        <field name="model">genres.literature</field>
+        <field name="arch" type="xml">
+            <search string="Genres Literature">
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="genres_literature_action" model="ir.actions.act_window">
+        <field name="name">Genres Literature</field>
+        <field name="res_model">genres.literature</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

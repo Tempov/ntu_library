@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <menuitem name="NTU Library" id="ntu_library_main_menu" sequence="110" action="ntu_library_action">
+        <menuitem name="Autor" id="ntu_library_autor_menu" sequence="10" action="ntu_library_autor_action"/>
+        <menuitem name="Language" id="ntu_library_lang_menu" sequence="20" action="ntu_library_lang_action"/>
+        <menuitem name="Publishing House" id="publishing_house_menu" sequence="30" action="publishing_house_action"/>
+        <menuitem name="Genres Literature" id="genres_literature_menu" sequence="40" action="genres_literature_action"/>
+    </menuitem>
+
+</odoo>

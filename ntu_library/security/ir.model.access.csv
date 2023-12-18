@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+ntu_library.access_ntu_library,access_ntu_library,ntu_library.model_ntu_library,base.group_user,1,1,1,1
+ntu_library.access_ntu_library_autor,access_ntu_library_autor,ntu_library.model_ntu_library_autor,base.group_user,1,1,1,1
+ntu_library.access_ntu_library_lang,access_ntu_library_lang,ntu_library.model_ntu_library_lang,base.group_user,1,1,1,1
+ntu_library.access_genres_literature,access_genres_literature,ntu_library.model_genres_literature,base.group_user,1,1,1,1
+ntu_library.access_publishing_house,access_publishing_house,ntu_library.model_publishing_house,base.group_user,1,1,1,1

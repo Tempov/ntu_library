@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="ntu_library_view_tree" model="ir.ui.view">
+        <field name="name">ntu.library.tree</field>
+        <field name="model">ntu.library</field>
+        <field name="arch" type="xml">
+            <tree string="NTU Library">
+                <field name="name"/>
+                <field name="autor"/>
+                <field name="language"/>
+                <field name="genres_of_literature"/>
+                <field name="publishing_house"/>
+                <field name="year_of_publication"/>
+                <field name="partner_id"/>
+                <field name="reservation"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="ntu_library_view_form" model="ir.ui.view">
+        <field name="name">ntu.library.form</field>
+        <field name="model">ntu.library</field>
+        <field name="arch" type="xml">
+            <form string="NTU Library">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="autor"/>
+                        <field name="language"/>
+                        <field name="genres_of_literature" widget="many2many_tags"/>
+                        <field name="publishing_house"/>
+                        <field name="year_of_publication"/>
+                        <field name="partner_id"/>
+                        <field name="reservation"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ntu_library_search" model="ir.ui.view">
+        <field name="name">ntu.library.search</field>
+        <field name="model">ntu.library</field>
+        <field name="arch" type="xml">
+            <search string="NTU Library">
+                <field name="name"/>
+                <field name="autor"/>
+                <field name="language"/>
+                <field name="genres_of_literature"/>
+                <field name="publishing_house"/>
+                <field name="year_of_publication"/>
+                <field name="partner_id"/>
+                <field name="reservation"/>
+                <field name="description"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="ntu_library_action" model="ir.actions.act_window">
+        <field name="name">Books</field>
+        <field name="res_model">ntu.library</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
